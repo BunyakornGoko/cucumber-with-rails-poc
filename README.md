@@ -1,24 +1,22 @@
-# README
+## Cucumber End-to-End Tests
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This project includes end-to-end tests written with Cucumber.
 
-Things you may want to cover:
+### Running the Tests
 
-* Ruby version
+You can run the Cucumber tests using the provided Makefile. Open your terminal in the project root directory and run:
 
-* System dependencies
+```bash
+make cucumber
+```
 
-* Configuration
+This command actually executes:
 
-* Database creation
+```bash
+bundle exec cucumber features/product_management.feature
+```
 
-* Database initialization
+You can view the code in those files by opening them directly in your code editor.
+Would you like me to read the content of these files for you using my tools? I can show you the contents of "features/step_definitions/product_steps.rb" and "features/product_management.feature" .
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Make sure you have the necessary dependencies installed by running `bundle install` before running the tests.
